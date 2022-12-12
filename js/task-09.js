@@ -8,6 +8,7 @@ const bodyRef = widgetRef.parentNode;
 const changeBtnRef = widgetRef.lastElementChild;
 
 changeBtnRef.addEventListener("click", () => {
-  bodyRef.style.backgroundColor = getRandomHexColor();
-  colorCodeRef.textContent = getRandomHexColor();
+  const randomColor = getRandomHexColor();
+  bodyRef.style.backgroundColor = randomColor;
+  colorCodeRef.textContent = randomColor;
 });
